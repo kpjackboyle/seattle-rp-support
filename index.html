@@ -661,7 +661,7 @@
 
       <div class="info">
         <strong>Need immediate help?</strong>
-        <span>If your server has an active support channel, staff may be able to assist there.</span>
+        <span>Ping an online staff member if it is a definite emergency.</span>
       </div>
     </aside>
   </main>
@@ -707,16 +707,16 @@
       const ticketNumber = Math.floor(10000 + Math.random() * 90000);
 
       const payload = {
-        username: "Seattle RP Support",
+        username: "Ticket Requests",
         embeds: [{
           title: "📨 New Support Request",
-          description: `**Request #${ticketNumber}**`,
+          description: `**Unique Code #${ticketNumber}**`,
           color: 0xFFC96B,
           fields: [
-            { name: "👤 Discord Username", value: data.username || "Not provided", inline: true },
-            { name: "📁 Request Type", value: data.category || "Not provided", inline: true },
-            { name: "📝 Subject", value: data.subject || "Not provided", inline: false },
-            { name: "💬 Description", value: data.message || "Not provided", inline: false }
+            { name: " Discord Username", value: data.username || "Not provided", inline: true },
+            { name: " Request Type", value: data.category || "Not provided", inline: true },
+            { name: " Subject", value: data.subject || "Not provided", inline: false },
+            { name: " Description", value: data.message || "Not provided", inline: false }
           ],
           footer: { text: "good shit" },
           timestamp: new Date().toISOString()
