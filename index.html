@@ -634,7 +634,7 @@
           required></textarea>
 
         <button class="submit" id="submitButton" type="submit">
-          Submit Support Request
+          Continue
         </button>
 
         <div id="status" class="status"></div>
@@ -761,7 +761,7 @@
         }
 
         status.className = "status success";
-        status.innerHTML = `<strong>Request submitted</strong><br>Your support request is <strong>#${ticketNumber}</strong>.`;
+        status.innerHTML = `<strong>Request submitted</strong><br>Your unique code is <strong>#${ticketNumber}</strong>.`;
         form.reset();
       } catch (error) {
         console.error("Support form submission failed:", error);
@@ -775,7 +775,7 @@
         }
       } finally {
         button.disabled = false;
-        button.textContent = "Continue";
+        button.textContent = "Submit Request";
       }
     });
   </script>
